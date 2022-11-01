@@ -1,0 +1,197 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+* {
+  font-family: arial, verdana, times New Roman;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  border-top: 2px solid gray;
+  font-weight: bold;
+  font-size: smaller;
+  color: darkblue;
+}
+.red-text {
+  color: red;
+}
+.error {
+  color: red;
+  font-size: x-small;
+}
+.grey-text {
+  color: grey;
+}
+a {
+  color: darkblue;
+  text-decoration: none;
+}
+.left-side {
+  /* max-width: 12%;
+  min-width: fit-content; */
+  height: fit-content;
+  margin-top: 0.5%;
+  padding: 0.5%;
+  font-size: small;
+  font-weight: 400;
+  color: darkblue;
+  border-right: 1px dotted grey;
+}
+.left-option-menu {
+  margin: 0;
+  padding-right: 1%;
+  border: 1px solid lightgray;
+  border-left: 0;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.left-option-menu li {
+  list-style-type: none;
+  position: relative;
+}
+
+.left-option-menu li:before {
+  color: rgba(35, 119, 168, 255);
+  content: '\25BA \0020';
+  font-size: 6px;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}
+.right-side {
+  /* padding-right: 0; */
+  margin: 0;
+}
+.loan-offers {
+  padding: 0.1%;
+  font-size: x-large;
+  font-weight: bolder;
+  color: skyblue;
+  border-bottom: 1px solid skyblue;
+}
+
+.steps-header {
+  color: rgba(35, 119, 168, 255);
+  font-size: smaller;
+  font-weight: bold;
+  background-color: rgba(135, 206, 235, 0.1);
+  width: 100%;
+}
+.step-body {
+  font-size: small;
+  font-weight: bolder;
+}
+.loan-headers {
+  background-color: rgba(211, 211, 211, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 9%;
+}
+.header-options {
+  width: 10%;
+  text-align: center;
+}
+.th {
+  background-color: rgb(245, 243, 243);
+}
+.cards {
+  margin-left: 1%;
+  width: 20%;
+}
+.option-containers {
+  width: 50%;
+  margin-left: 25%;
+}
+.form-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.read-more {
+  text-decoration: underline;
+  color: grey;
+  float: right;
+  font-weight: 100;
+}
+
+.loan-input {
+  padding: 0;
+  width: 40%;
+}
+.loan-input-text {
+  color: grey;
+}
+.step-3 {
+  width: 40%;
+  min-width: fit-content;
+  float: left;
+  border: 2px solid rgba(35, 119, 168, 255);
+  margin-left: 1%;
+  padding: 0;
+}
+.step-3-input-header {
+  padding: 1%;
+  color: rgba(35, 119, 168, 255);
+  font-weight: bold;
+  background-color: rgba(35, 119, 168, 0.1);
+}
+
+.step-3-input-body {
+  padding: 1%;
+  font-size: small;
+  font-weight: bold;
+}
+select {
+  width: 100%;
+}
+
+.step-3-body {
+  font-size: small;
+  font-weight: bold;
+}
+.link {
+  color: grey;
+}
+.interest-amount {
+  padding: 1px;
+  /* border: 1px solid grey; */
+}
+.loan-tenure {
+  border: 0;
+}
+
+.othertoggler {
+  border: none;
+  width: fit-content;
+  color: darkblue;
+}
+.accordion-button {
+  color: rgba(35, 119, 168, 255);
+  padding: 0;
+}
+
+#left-side-container,
+#left-side-container2 {
+  align-items: flex-start;
+}
+@media screen and (max-width: 575px) {
+  .left-side {
+    width: 100%;
+    font-size: medium;
+    border: 0;
+  }
+  .right-side {
+    padding: 1px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .navbar .container-fluid,
+  .navbar-expand-sm .navbar-collapse,
+  .navbar-expand-sm .navbar-nav {
+    flex-direction: column;
+  }
+}
